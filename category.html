@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        Body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: rgb(255, 233, 192);  
+  }  
+        a:link{
+            display: inline-block;
+            background-color: skyblue;
+            color: skyblue;
+            font-size: x-large;
+            border: 2px;
+            border-style: dotted;
+            text-decoration: dotted;
+            padding: 2px; height: 10%;
+            margin: 40px;
+        }
+        .h{
+            display: inline-block;
+            background-color: skyblue;
+            font-size: x-large;
+            border: 2px;
+            border-style: dotted;
+            text-decoration: dotted;
+            padding: 2px; height: 10%;
+            margin: 40px;
+            
+        } 
+    
+    </style>
+</head>
+<body>
+    <h1 class="h">  Category Page</h1>
+    <div style="width: 80%; align-items: center; margin:2% 10%;">
+        <nav id="menu">
+
+        </nav>
+    </div>
+    <script src="./jquery3.6.3.js"></script>
+    <script>
+        loaddata();
+        function loaddata() {
+            var httpRequest = new XMLHttpRequest();
+            httpRequest.open("GET", "CategoryData.json", true);
+            httpRequest.getResponseHeader("Content-type", "application/json");
+            httpRequest.onload = function () {
+                // alert(this.responseText);
+                var data = JSON.parse(this.responseText);
+                console.clear();
+                var menu = document.getElementById("menu");
+                data.category.forEach(element => {
+                    var link = document.createElement("a");
+                     let href = "Subcategory.html?" + element.Id;
+                    link.innerText = element.Name;
+                    link.setAttribute("href", href);
+                    menu.appendChild(link);
+                });
+                
+            }
+            httpRequest.send();
+        }
+    </script>
+</body>
+</html>

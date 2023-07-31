@@ -1,0 +1,155 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         
+         #menu{
+             
+            text-align: center;
+            width: 50%;
+            margin-top: 140px;
+            margin-bottom: 10px;
+            padding: 7%;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 150%;
+            margin-left: 42%;
+   
+   
+         }
+         
+         .login-form{
+             text-align: center;
+         }
+         
+   
+   button:hover {
+     background-color: #e84444;
+   }
+     </style>
+         <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+     <header>
+        <h1>Product Details</h1>
+        <button type="submit" id="logout">logout </button>
+    </header>
+    <img id="animated-image" src="image/sale.jpg" />
+     <script src="jquery3.6.3.js"></script>
+ 
+     <div style="width: 70%; align-items: center; margin-top: 2%;">
+         <div id="menu">
+            <p id="head">Product Details</p><hr>
+            <div id="image">
+
+            </div>
+ 
+        </div>
+     </div>
+    
+ 
+     <script>
+         $(document).ready(function() {
+        animateImage();
+      });
+
+      function animateImage() {
+        $("#animated-image").animate({left:'84%'}, 10000, "linear", function() {
+          $(this).animate({left:'0%'}, 10000, "linear");
+          animateImage();
+        });
+      }
+         var querystring=location.search;
+        
+         //var divLocation=document.getElementById('divLocation');
+        
+         var parameter=querystring.substring(1).split("|");
+         var id=decodeURI(parameter[0]);
+        
+     
+ 
+ loadset();
+ 
+ function loadset(){
+    var menu=$('#menu');
+    $.getJSON('./product.json',function(data){
+      data.products.forEach(element=>{
+       
+         if(id==element.name){
+            
+        var div=document.getElementById('image');
+        var im=document.createElement('img');
+        im.setAttribute('src',element.image);
+         if(element.subid==1 || element.subid==2){   
+        
+         
+         var link="product Name: "+element.name+"<hr>product brand: "+element.brand+"<hr>product category: "+element.category+"<hr>product color: "+element.color+"<hr>product size: "+element.size+"<hr>product description: "+element.description+"<hr>product price: "+element.price;
+         div.appendChild(im);   
+         menu.append(link);
+
+     }
+     else if(element.subid==3 || element.subid==4){
+        var link="product Name: "+element.name+"<hr>product brand: "+element.company+"<hr>product display: "+element.display+"<hr>product screen size: "+element.screen_size+"<hr>product camara: "+element.camara+"<hr>product battery: "+element.battery+"<hr>product price: "+element.price;
+         div.appendChild(im);   
+         menu.append(link);
+     }
+     else if(element.subid==5 || element.subid==6){
+        var link="product Name: "+element.name+"<hr>product brand: "+element.brand+"<hr>product description: "+element.description+"<hr>product price: "+element.price;
+         div.appendChild(im);   
+         menu.append(link);
+     }
+     else if(element.subid==7 || element.subid==8){
+       
+        var link="product Name: "+element.name+"<hr>product author: "+element.brand+"<hr>product genre: "+element.genre+"<hr>book publish date: "+element.publication_date+"<hr>product description: "+element.description+"<hr>product price: "+element.price;
+         div.appendChild(im);   
+         menu.append(link);
+
+     }
+     else{
+        var link="product Name: "+element.name+"<hr>product category: "+element.category+"<hr>product description: "+element.description+"<hr>product price: "+element.price;
+         div.appendChild(im);   
+         menu.append(link);
+
+     }
+     }
+    });
+ })
+ }
+ 
+          
+         
+         //var name=parameter[1];
+         //var description=parameter[2];
+         //  var price=parameter[3];
+          //var parent_category=parameter[3];
+         //  var parent_category=parameter[5];
+         /* var image=parameter[4];
+ 
+         divLocation.appendChild(document.createTextNode("id: "+id));
+         divLocation.appendChild(document.createElement("hr"));
+         divLocation.appendChild(document.createTextNode("name: "+name));
+         divLocation.appendChild(document.createElement("hr"));
+         divLocation.appendChild(document.createTextNode("description: "+description));
+         divLocation.appendChild(document.createElement("hr"));
+         //  divLocation.appendChild(document.createTextNode("Price:"+price));
+         //  divLocation.appendChild(document.createElement("hr"));
+          divLocation.appendChild(document.createTextNode("parent catagory:"+parent_category));
+         divLocation.appendChild(document.createElement("hr"));
+         divLocation.appendChild(document.createTextNode("image: "+image));
+  */
+         var logout=document.getElementById('logout');
+         logout.addEventListener('click',function(){
+             sessionStorage.removeItem('user');
+             window.location='login.html';
+         });
+ 
+     
+     </script>
+ </body>
+ </html>

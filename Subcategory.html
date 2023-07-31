@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subcategory</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+		<h1>SubCategory Page</h1>
+		<button type="submit" id="logout">logout </button>
+	</header>
+    <img id="animated-image" src="image/sale.jpg" height="200" width="200" />
+    
+        <div id="menu" style="width: 100%;text-align: center; margin-top: 30px;"> 
+            
+        </div> 
+            
+    
+    <script src="jquery3.6.3.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        animateImage();
+      });
+
+      function animateImage() {
+        $("#animated-image").animate({left:'84%'}, 10000, "linear", function() {
+          $(this).animate({left:'0%'}, 10000, "linear");
+          animateImage();
+        });
+      }
+        var querystring = location.search;
+        var parameter = querystring.substring(1).split("|");
+
+
+        var id = decodeURI(parameter[0]);
+
+
+        var logout = document.getElementById('logout');
+        logout.addEventListener('click', function () {
+            sessionStorage.removeItem('user');
+            window.location = 'login.html';
+        })
+
+        loadset();
+
+        function loadset() {
+            var menu = $('#menu');
+            $.getJSON('./subcat.json', function (data) {
+                data.subcategories.forEach(element => {
+                    var href = "product.html?" + element.id;
+                    if(id=='home'){
+                        menu.innerHTML="";
+                    var a=document.createElement('a');
+                    a.setAttribute('href',href);
+                    var div=document.createElement('div');
+                    div.setAttribute('class','block');
+                    var im=document.createElement('img');
+                    im.setAttribute('src',element.image);
+                    var p=document.createElement('p');
+                    p.appendChild(document.createTextNode(element.name ));
+                    div.appendChild(im);
+                    div.appendChild(p);
+                   
+                    a.appendChild(div);
+                    $('#menu').append(a);
+                
+
+
+                    }
+                    
+                    
+                    if (id == element.catid) {
+                  
+
+                    menu.innerHTML="";
+                    var a=document.createElement('a');
+                    a.setAttribute('href',href);
+                    var div=document.createElement('div');
+                    div.setAttribute('class','block');
+                    var im=document.createElement('img');
+                    im.setAttribute('src',element.image);
+                    var p=document.createElement('p');
+                    p.appendChild(document.createTextNode(element.name ));
+                    div.appendChild(im);
+                    div.appendChild(p);
+                    a.appendChild(div);
+                    $('#menu').append(a);
+                
+
+                    }
+                });
+            })
+        }
+
+    </script>
+</body>
+
+</html>

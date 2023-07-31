@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   /*       h1 {
+			margin: 0;
+			padding: 20px;
+			background-color: #333;
+			color: #fff;
+			text-align: center;
+            width: 98%;
+
+		}
+        #menu{
+            display: grid; */
+        /* text-decoration: none; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* text-align: center;
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 7%;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 150%;
+  margin-left: 36%;
+  
+  
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        .login-form{
+            text-align: center;
+        }
+        
+         button {
+    background-color: #536370;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 10%; margin-left: 47%;
+    text-align: center;
+  }
+
+  button:hover {
+    background-color: #e84444;
+  } */
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- <h1 id="Category"> Product</h1>
+    <br><br>
+ -->
+ <header>
+    <h1>Product Page</h1>
+    <button type="submit" id="logout">logout </button>
+</header>
+<img id="animated-image" src="image/sale.jpg" height="100" width="100" />
+<br><br><br><br><br><br>
+
+    <label>
+        Search
+    </label>
+    <input type="text" id="search" placeholder="enter product name">
+    <input type="button" id="searchbtn" value="Search">
+
+
+<div id="menu" style="width: 100%;text-align: center; margin-top: 30px;"> 
+            
+</div> 
+<script src="jquery3.6.3.js"></script>
+
+    <script>
+          $(document).ready(function() {
+        animateImage();
+      });
+
+      function animateImage() {
+        $("#animated-image").animate({left:'84%'}, 10000, "linear", function() {
+          $(this).animate({left:'0%'}, 10000, "linear");
+          animateImage();
+        });
+      }
+        var querystring=location.search;
+       
+        //var divLocation=document.getElementById('divLocation');
+       
+        var parameter=querystring.substring(1).split("|");
+        var id=decodeURI(parameter[0]);
+        
+        var submitt=document.getElementById('searchbtn');
+        submitt.addEventListener('click',fetchdata);
+        function fetchdata(){
+            var search=document.getElementById("search").value;;
+         
+            
+            $.getJSON('./product.json',function(data){
+                    data.products.forEach(element=>{
+                        let href="product1.html?"+element.name;  
+                    if(search==element.name){
+                  
+                     menu.innerHTML="";
+                    var a=document.createElement('a');
+                    a.setAttribute('href',href);
+                    var div=document.createElement('div');
+                    div.setAttribute('class','block');
+                    var im=document.createElement('img');
+                    im.setAttribute('src',element.image)
+                    var p=document.createElement('p');
+                    p.appendChild(document.createTextNode(element.name ));
+                    div.appendChild(im);
+                    div.appendChild(p);
+                   
+                    a.appendChild(div);
+                    $('#menu').append(a);
+
+
+                    }
+    
+                });
+    });
+            
+        }
+   
+
+loadset();
+
+function loadset(){
+    var menu=$('#menu');
+   $.getJSON('./product.json',function(data){
+     data.products.forEach(element=>{
+        
+        let href="product1.html?"+element.name;
+        if(id=='home'){
+                    menu.innerHTML="";
+                    var a=document.createElement('a');
+                    a.setAttribute('href',href);
+                    var div=document.createElement('div');
+                    div.setAttribute('class','block');
+                    var im=document.createElement('img');
+                    im.setAttribute('src',element.image)
+                    var p=document.createElement('p');
+                    p.appendChild(document.createTextNode(element.name ));
+                    div.appendChild(im);
+                    div.appendChild(p);
+                   
+                    a.appendChild(div);
+                    $('#menu').append(a);
+                
+
+        }
+        if(id==element.subid){
+                    menu.innerHTML="";
+                    var a=document.createElement('a');
+                    a.setAttribute('href',href);
+                    var div=document.createElement('div');
+                    div.setAttribute('class','block');
+                    var im=document.createElement('img');
+                    im.setAttribute('src',element.image);
+                    var p=document.createElement('p');
+                    p.appendChild(document.createTextNode(element.name ));
+                    div.appendChild(im);
+                    div.appendChild(p);
+                    
+                    a.appendChild(div);
+                    $('#menu').append(a);
+                
+        }
+    });
+})
+}
+
+         
+        
+        // var name=parameter[1];
+        // var description=parameter[2];
+        //  var price=parameter[3];
+        //  var parent_category=parameter[3];
+        //   var parent_category=parameter[5];
+        //  var image=parameter[4];
+
+        // divLocation.appendChild(document.createTextNode("id: "+id));
+        // divLocation.appendChild(document.createElement("hr"));
+        // divLocation.appendChild(document.createTextNode("name: "+name));
+        // divLocation.appendChild(document.createElement("hr"));
+        // divLocation.appendChild(document.createTextNode("description: "+description));
+        // divLocation.appendChild(document.createElement("hr"));
+        //   divLocation.appendChild(document.createTextNode("Price:"+price));
+        //  divLocation.appendChild(document.createElement("hr"));
+        //  divLocation.appendChild(document.createTextNode("parent catagory:"+parent_category));
+        // divLocation.appendChild(document.createElement("hr"));
+        // divLocation.appendChild(document.createTextNode("image: "+image));
+ 
+        var logout=document.getElementById('logout');
+        logout.addEventListener('click',function(){
+            sessionStorage.removeItem('user');
+            window.location='logins.html';
+        });
+
+    
+    </script>
+    
+</body>
+</html>

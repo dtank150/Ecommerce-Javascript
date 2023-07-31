@@ -1,0 +1,26 @@
+{
+    "category":[
+        {
+            "Id":1,
+            "Name":"Clothes"
+        },
+        {
+            "Id":2,
+            "Name":"Electronics"
+
+
+        },
+        {
+            "Id":3,
+            "Name":"Makeup"
+        },
+        {
+            "Id":4,
+            "Name":"Books"
+        },
+        {
+            "Id":5,
+            "Name":"Grocery"
+        }
+    ]
+}

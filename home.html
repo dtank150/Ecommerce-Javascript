@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+	<script src="jquery3.6.3.js"></script>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <header>
+		<h1>Home Page</h1>
+		<button  type="submit" id="logout">Logout </button><br>
+        
+	</header>
+    <img id="animated-image" src="image/sale.jpg" />
+    
+    
+    <div style="width: 100%;text-align: center; margin-top: 30px;">
+
+   
+	<a href="category.html?home"><div style="width: 30%;" class="block">
+		<img src="image/subcategory/category.jpg" width="150px" height="150px">
+		<p>Category Page</p>
+	</div></a>
+	<a href="Subcategory.html?home"><div style="width: 30%;" class="block">
+		<img src="image/subcategory/subcategory.png" width="150px" height="150px">
+		<p>SubCategory Page</p>
+	</div></a>
+	<a href="product.html?home"><div style="width: 30%;" class="block">
+		<img src="image/subcategory/product.jpg" width="150px" height="150px">
+		<p>Product Page</p>
+	</div></a>
+	<script>
+		
+		/* if(!temp){
+			window.location='login.html'
+		} */ 
+
+        var logout=document.getElementById('logout');
+        logout.addEventListener('click',function(){
+            sessionStorage.removeItem('user');
+            window.location='logins.html';
+        })
+      </script>
+    
+    <script>
+      $(document).ready(function() {
+        animateImage();
+      });
+
+      function animateImage() {
+        $("#animated-image").animate({left:'84%'}, 10000, "linear", function() {
+          $(this).animate({left:'0%'}, 10000, "linear");
+          animateImage();
+        });
+      }
+    </script>
+  </body>
+</html>
+

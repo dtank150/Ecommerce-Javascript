@@ -1,0 +1,595 @@
+{
+    "products": [
+    {
+        "id": 1,
+        "subid":3,
+        "company":"oneplus",
+        "name": "OnePlus 9 Pro",
+        "screen_size": "6.7 inches",
+        "display": "Fluid AMOLED, 120Hz",
+        "resolution": "1440 x 3216 pixels",
+        "camera": "48 MP + 50 MP + 8 MP + 2 MP",
+        "battery": "4500 mAh",
+        "price": "$969",
+        "image": "image/product/OnePlus 9 Pro.jpg"
+    },
+    {
+        "id": 2,
+        "subid":3,
+        "company":"vivo",
+        "name": "Vivo V21",
+        "screen_size": "6.44 inches",
+        "display": "AMOLED, 90Hz",
+        "resolution": "1080 x 2404 pixels",
+        "camera": "64 MP + 8 MP + 2 MP",
+        "battery": "4000 mAh",
+        "price": "$399",
+        "image": "image/product/Vivo V21.jpg"
+    },
+   
+    {
+        "id": 3,
+        "subid":3,
+        "company":"Redmi",
+        "name": "Xiaomi Redmi Note 10 Pro",
+        "screen_size": "6.67 inches",
+        "display": "AMOLED, 120Hz",
+        "resolution": "1080 x 2400 pixels",
+        "camera": "64 MP + 8 MP + 5 MP + 2 MP",
+        "battery": "5020 mAh",
+        "price": "$299",
+        "image": "image/product/Xiaomi Redmi Note 10 Pro.jpg"
+    },
+    
+   
+    {
+        
+        "id": 4,
+        "subid":3,
+        "company":"Realme",
+        "name": "Realme GT 5G",
+        "screen_size": "6.43 inches",
+        "display": "Super AMOLED, 120Hz",
+        "resolution": "1080 x 2400 pixels",
+        "camera": "64 MP + 8 MP + 2 MP",
+        "battery": "4500 mAh",
+        "price": "$499",
+        "image":"image/product/realme.jpg"
+    },
+   
+    {
+        "id": 5,
+        "subid":3,
+        "company":"apple",
+        "name": "iPhone 13 Pro",
+        "screen_size": 6.1,
+        "display": "Super Retina XDR",
+        "resolution": "2532 x 1170 pixels",
+        "camera": "Triple 12MP camera system",
+        "battery": "Up to 22 hours of talk time",
+        "price": 999,
+        "image":"image/product/iPhone 13 Pro.jpg"   },
+     
+    
+          {
+            "id": 6,
+            "subid":4,
+            "company":"HP",
+            "name": "HP Pavilion",
+            "screen_size": "15.6 inches",
+            "display": "LED",
+            "resolution": "1920x1080",
+            "camera": "720p HD webcam",
+            "battery": "3-cell, 41 Wh Li-ion",
+            "price": "$599",
+            "image":"image/product/HP Pavilion.jpg"
+          },
+         
+          {
+            "id": 7,
+            "subid":4,
+            "company":"Dell",
+            "name": "Dell XPS",
+            "screen_size": "13.4 inches",
+            "display": "IPS",
+            "resolution": "3840x2400",
+            "camera": "HD webcam",
+            "battery": "4-cell, 52 Wh Li-ion",
+            "price": "$1,299",
+            "image":"image/product/Dell XPS.jpg"
+          },
+         
+          {
+            "id": 8,
+            "subid":4,
+            "company":"Apple",
+            "name": "Apple MacBook Air",
+            "screen_size": "13.3 inches",
+            "display": "Retina",
+            "resolution": "2560x1600",
+            "camera": "720p FaceTime HD camera",
+            "battery": "49.9 Wh Li-Polymer",
+            "price": "$999",
+            "image":"image/product/Apple MacBook Air.jpg"
+          },
+         
+          {
+            "id": 9,
+            "subid":4,
+            "company":"Lenovo",
+            "name": "Lenovo ThinkPad X1 Carbon",
+            "screen_size": "14 inches",
+            "display": "IPS",
+            "resolution": "1920x1080",
+            "camera": "720p HD webcam",
+            "battery": "4-cell, 57 Wh Li-Polymer",
+            "price": "$1,399",
+            "image":"image/product/Lenovo ThinkPad X1 Carbon.jpg"          },
+        
+          {
+            "id": 10,
+            "subid":4,
+            "company":"ASUS",
+            "name": "ASUS ZenBook Flip S",
+            "screen_size": "13.3 inches",
+            "display": "OLED",
+            "resolution": "1920x1080",
+            "camera": "IR webcam with Windows Hello support",
+            "battery": "4-cell, 67 Wh Li-Polymer",
+            "price": "$1,499",
+            "image":"image/product/ASUS ZenBook Flip S.jpg"
+          },
+          
+      
+              
+              
+            
+                {
+
+                "id": 11,
+                "subid":5,
+                "name": "Nars  Concealer",
+                "brand": "Nars",
+                "type": "Concealer",
+                "price": 30.00,
+                "description": "A creamy concealer with buildable coverage .",
+                "image":"image/product/Nars  Concealer.jpg"
+                },
+                {
+                "id": 12,
+                "subid":5,
+                "name": "Benefit  Mascara",
+                "brand": "Benefit Cosmetics",
+                "type": "Mascara",
+                "price": 25.00,
+                "description": "A lengthening and volumizing mascara .",
+                "image":"image/product/Benefit  Mascara.jpg"
+                },
+                {
+                "id": 13,
+                "subid":5,
+                "name": "Fenty Luminizer",
+                "brand": "Fenty Beauty",
+                "type": "Lip Gloss",
+                "price": 19.00,
+                "description": "A non-sticky lip gloss that provides a universal.",
+                "image":"image/product/Fenty Luminizer.jpg"
+                },
+                {
+                "id": 14,
+                "subid":5,
+                "name": "Anastasia  Brow Wiz",
+                "brand": "Anastasia Beverly Hills",
+                "type": "Eyebrow Pencil",
+                "price": 23.00,
+                "description": "An ultra-fine eyebrow pencil",
+                "image":"image/product/Anastasia  Brow Wiz.jpg"
+                },
+                {
+                "id": 15,
+                "subid":5,
+                "name": "Laura Powder",
+                "brand": "Laura Mercier",
+                "type": "Setting Powder",
+                "price": 39.00,
+                "description": "A lightweight, powder .",
+                "image":"image/product/Laura Powder.jpg"
+                },
+                 {  
+                    "id": 16,
+                    "subid":6,
+                    "name": "Cetaphil  Cream", 
+                   "brand": "Cetaphil", 
+                    "price": 15.99,
+                    "description": "fragrance-free cream that sensitive skin.",   
+                    "ingredients": ["Water", "Glycerin", "Petrolatum", "Dicaprylyl Ether"],
+                    "image": "image/product/Cetaphil  Cream.jpg"
+                },
+
+                {
+                    "id": 17,
+                    "subid":6,
+                    "name": "Nivea Body Milk",
+                    "brand": "Nivea",
+                    "price": 7.99,
+                    "description": "Enriched with natural almond oil.",
+                    "ingredients": ["Water", "Mineral Oil", "Glycerin", "Cetearyl Alcohol"],
+                    "image": "image/product/Nivea Body Milk.jpg"
+                },
+                {
+                    "id": 18,
+                    "subid":6,
+                    "name": "Palmer's  Lotion",
+                    "brand": "Palmer's",
+                    "price": 6.99,
+                    "description": "lotion contains pure cocoa butter .",
+                    "ingredients": ["Water", "Theobroma Cacao (Cocoa) Extract", "Glycerin", "Stearic Acid"],
+                    "image": "image/product/Palmer's  Lotion.jpg"
+                },
+                {
+                    "id": 19,
+                    "subid":6,
+                    "name": "Eucerin  Lotion",
+                    "brand": "Eucerin",
+                    "price": 12.99,
+                    "description": "This fast-absorbing lotion .",
+                    "ingredients": ["Water", "Glycerin", "Urea", "Caprylic/Capric Triglyceride"],
+                    "image": "image/product/Eucerin  Lotion.jpg"
+                },
+                {
+                    "id": 20,
+                    "subid":6,
+                    "name": "Eucerin ",
+                    "brand": "Eucerin",
+                    "price": 12.99,
+                    "description": " lotion is  proven to repair damaged skin.",
+                    "ingredients": ["Water", "Glycerin", "Urea", "Caprylic/Capric Triglyceride"],
+                    "image": "image/product/Eucerin.jpg"
+                },
+
+
+
+                {
+                    "id": 21,
+                    "subid":1,
+                    "name": "Men's T-Shirt",
+                    "brand": "uspollo",
+                    "category": "T-Shirts",
+                    "color": "red,blue",
+                    "size": ["S", "M", "L", "XL"],
+                    "price": 800,
+                    "description": "collor tshirt.",
+                    "image": "image/product/Men's T-Shirt.jpg"
+                  },
+
+              {
+                "id": 22,
+                "subid":1,
+                "name": "Nike Hoodie",
+                "brand": "Nike",
+                "category": "Hoodies",
+                "color": "BLACK",
+                "size": ["S", "M", "L", "XL"],
+                "price":1000,
+                "description": "COTTEN Hoodie.",
+                "image": "image/product/nike Hoodie.jpg"
+              },
+              {
+                "id": 23,
+                "subid":1,
+                "name": "LEVIS Jeans",
+                "brand": "LEVIS",
+                "category": "Jeans",
+                "color": "BLACK,BLUE,SKYBLUE",
+                "size": ["30x30", "32x30", "34x30", "36x30"],
+                "price": 1200,
+                "description": "ANKLE Jeans.",
+                "image": "image/product/LEVIS Jeans.jpg"
+              },
+              {
+                "id": 24,
+                "subid":1,
+                "name": "Denium Shirt",
+                "brand": "ADDIDAS",
+                "category": "Shirts",
+                "color": "BLACK-WHITE",
+                "size": ["8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5"],
+                "price": 3000,
+                "description": "SNEAKER Shoes.",
+                "image": "image/product/SHIRTS.jpg"
+              },
+              {
+                "id": 25,
+                "subid":1,
+                "name": "WESTSIDE jacket",
+                "brand": "WESTSIDE",
+                "category": "Suits",
+                "color": "PINK",
+                "size": ["40R", "42R", "44R", "46R"],
+                "price": 1500,
+                "description": "100% COTTON Suit.",
+                "image": "image/product/WESTSIDE jacket.jpg"
+              },
+              {
+                "id": 26,
+                "subid":2,
+                "name": "one pice",
+                "brand": "JUDIO",
+                "category": "onepice",
+                "color": "Light pink",
+                "size": ["S", "M", "L", "XL"],
+                "price": 800,
+                "description": "one pice",
+                "image": "image/product/one pice.jpg"
+              },
+              {
+                "id": 27,
+                "subid":2,
+                "name": "woman  Sweatpants",
+                "brand": "TRADS",
+                "category": "Pants",
+                "color": "BLACK",
+                "size": ["S", "M", "L", "XL"],
+                "price": 900,
+                "description": "COMFORTABLE Sweatpants.",
+                "image": "image/product/woman  Sweatpants.jpg"
+              },
+              {
+                "id":28,
+                "subid":2,
+                "name": "Woman Sweater",
+                "brand": "uspollo",
+                "category": "SWEATER",
+                "color": "BILUE,RED",
+                "size": ["S", "M", "L", "XL"],
+                "price": 1300,
+                "description": "WINTER SweatER.",
+                "image": "image/product/Woman Sweater.jpg"
+              },
+              {
+                "id": 29,
+                "subid":2,
+                "name": "WOMAN Sweatshirt",
+                "brand": "ZARA",
+                "category": "Shirts",
+                "color": "PINK,GREEN",
+                "size": ["S", "M", "L", "XL"],
+                "price": 4000,
+                "description": "WOMAN Sweatshirt.",
+                "image": "image/product/WOMAN Sweatshirt.jpg"
+              },
+              {
+                "id": 30,
+                "subid":2,
+                "name": "WS TSHIRT",
+                "brand": "WESTSIDE",
+                "category": "T-Shirts",
+                "color": "PINK,RED,PERPAL",
+                "size": ["S", "M", "L", "XL"],
+                "price": 2000,
+                "description": "TSHIRT",
+                "image": "image/product/WS TSHIRT.jpg"
+              },
+              
+            
+               
+              
+                {
+                  "id": 31,
+                  "subid":7,
+                  "name": "Sapiens",
+                  "author": "Yuval Noah Harari",
+                  "price": 12.99,
+                  "genre": "History",
+                  "description": "This book explores the history of the human species",  "publisher": "Harper",
+                  "publication_date": "February 10, 2015",
+                  "image": "image/product/Sapiens book.jpg"
+                },
+                {
+                  "id": 32,
+                  "subid":7,
+                  "name": "The7Habits",
+                  "author": "Stephen R. Covey",
+                  "price": 8.99,
+                  "genre": "Self-Help",
+                  "description": "This book presents a framework for personal and professional development",         "publisher": "Free Press",
+                  "publication_date": "August 15, 1989",
+                  "image": "image/product/The 7 Habits.jpg"
+                },
+                {
+                  "id": 33,
+                  "subid":7,
+                  "name": "Thinking, Fast and Slow",
+                  "author": "Daniel Kahneman",
+                  "price": 11.99,
+                  "genre": "Psychology",
+                  "description": "This book explores the two systems of thinking ",              "publisher": "Farrar, Straus and Giroux",
+                  "publication_date": "October 25, 2011",
+                  "image": "image/product/Thinking, Fast and Slow.jpg"
+                },
+                {
+                  "id": 34,
+                  "subid":7,
+                  "name":"The Immortal Life",
+                  "author": "Rebecca Skloot",
+                  "price": 9.99,
+                  "genre": "Science",
+                  "description": "This book tells the story of Henrietta Lacks,",                 "publisher": "Crown Publishing Group",
+                  "publication_date": "February 2, 2010",
+                  "image": "image/product/The Immortal Life.jpg"
+                },
+                {
+                  "id": 35,
+                   "subid":7,
+                  "name": "Into Thin Air",
+                  "author": "Jon Krakauer",
+                  "price": 10.99,
+                  "genre": "Adventure",
+                  "description": "This book is a personal account of the 1996 Mount Everest disaster",             "publisher": "Villard",
+                  "publication_date": "April 22, 1997",
+                  "image":"image/product/Into Thin Air.jpg"
+                },
+              
+   
+            {
+                "id": 36,
+                "subid":8,
+                "name": "Becoming",
+                "author": "Michelle Obama",
+                "price": 14.99,
+                "genre": "Memoir",
+                "description": "This book is a memoir by Michelle Obama. ",       "publisher": "Crown Publishing Group",
+                "publication_date": "November 13, 2018",
+                "image": "image/product/Becoming.jpg"
+            },
+            {
+                "id": 37,
+                "subid":8,
+                "name": "Born a Crime",
+                "author": "Trevor Noah",
+                "price": 10.99,
+                "genre": "Memoir",
+                "description": "This book is a memoir by Trevor Noah, ",
+                "publication_date": "November 15, 2016",
+                "image": "image/product/Born a Crime.jpg"
+            },
+            {
+                "id": 38,
+                "subid":8,
+                "name": "Bad Blood",
+                "author": "John Carreyrou",
+                "price": 12.99,
+                "genre": "Business",
+                "description": "This book is an investigative journalism account of the rise ",
+                "publication_date": "May 21, 2018",
+                "image": "image/product/John Carreyrou.jpg"
+            },
+            {
+                "id": 39,
+                "subid":8,
+                "name": "The New Jim Crow",
+                "author": "Michelle Alexander",
+                "price": 11.99,
+                "genre": "Sociology",
+                "description": "This book argues that the American criminal ",             "publisher": "The New Press",
+                "publication_date": "January 5, 2010",
+                "image": "image/product/The New Jim Crow.jpg"
+            },
+            {
+                "id": 40,
+                "subid":8,
+                "name": "The Sixth Extinction",
+                "author": "Elizabeth Kolbert",
+                "price": 9.99,
+                "genre": "Science",
+                "description": "This book explores the current mass extinction of species",
+                "publication_date": "February 11, 2014",
+                "image":"image/product/The Sixth Extinction.jpg"
+            },
+           
+                  {
+                    
+                    "id": 41,
+                    "subid":9,
+                    "name": "Coffee",
+                    "description": "A hot beverage made from roasted coffee beans",
+                    "price": 2.99,
+                    "image": "image/product/Coffee.jpg",
+                    "category": "Hot Beverages"
+                    
+                  },
+                  {
+                    "id": 42,
+                    "subid":9,
+                    "name": "Iced Tea",
+                    "description": "A refreshing cold beverage made from tea leaves",
+                    "price": 1.99,
+                    "image": "image/product/Iced Tea.jpg",
+                    "category": "Cold Beverages"
+                   
+                  },
+                  {
+                    "id": 43,
+                    "subid":9,
+                    "name": "Orange Juice",
+                    "description": "A sweet and tangy juice made from fresh oranges",
+                    "price": 3.49,
+                    "image": "image/product/Orange Juice.jpg",
+                    "category": "Juices"
+                  },
+                  {
+                    "id": 44,
+                    "subid":9,
+                    "name": "Milk",
+                    "description": "A white liquid produced by mammals",
+                    "price": 1.99,
+                    "image": "image/product/Milk.jpg",
+                    "category": "Dairy"
+                  },
+                  {
+                    "id": 45,
+                    "subid":9,
+                    "name": "Lemonade",
+                    "description": "A refreshing drink made from lemon juice, water, and sugar",
+                    "price": 2.49,
+                    "image": "image/product/Lemonade.jpg",
+                    "category": "Cold Beverages"
+                  },
+                  
+
+                    {
+                    "id": 46,
+                    "subid":10,
+                    "name": "Samosa",
+                    "description": "A fried or baked pastry with a savoury filling, usually consisting of spiced potatoes, onions, peas, or lentils",
+                    "price": 0.99,
+                    "image": "image/product/Samosa.jpg",
+                    "category": "Savoury Snacks"
+                    },
+                    {
+                    "id": 47,
+                    "subid":10,
+                    "name": "Masala Peanuts",
+                    "description": "Roasted peanuts with a spicy seasoning",
+                    "price": 1.49,
+                    "image": "image/product/Masala Peanuts.jpg",
+                    "category": "Nuts & Seeds"
+                    },
+                    {
+                    "id": 48,
+                    "subid":10,
+                    "name": "Bhujia",
+                    "description": "A spicy and crunchy snack made from gram flour and spices",
+                    "price": 2.99,
+                    "image": "image/product/bhujia.jpg",
+                    "category": "Savoury Snacks"
+                    },
+                    {
+                    "id": 49,
+                    "subid":10,
+                    "name": "Murukku",
+                    "description": "A crispy and crunchy snack made from rice flour and spices",
+                    "price": 3.99,
+                    "image": "image/product/Murukku.jpg",
+                    "category": "Savoury Snacks"
+                    },
+                    {
+                    "id": 50,
+                    "subid":10,
+                    "name": "Jhal Muri",
+                    "description": "A spicy and tangy snack made from puffed rice, peanuts, spices, and vegetables",
+                    "price": 1.99,
+                    "image": "image/product/Jhal Muri.jpg",
+                    "category": "Savoury Snacks"
+                    }
+  ]
+}
+
+                
+                
+              
+
+   
+    
+
+

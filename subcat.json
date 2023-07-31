@@ -1,0 +1,64 @@
+{
+    "subcategories": [
+        {
+            "id": 1,
+            "catid":1,
+            "name": "Men's Clothing",
+            "image": "image/subcategory/mencloths.jpg"
+        },
+        {
+            "id": 2,
+            "catid":1,
+            "name": "Women's Clothing",
+            "image": "image/subcategory/woman.jpg"
+        },
+        {
+            "id": 3,
+            "catid":2,
+            "name": "Mobile",
+            "image": "image/subcategory/mobile.jpg"
+        },
+        {
+            "id": 4,
+            "catid":2,
+            "name": "Laptop",
+            "image": "image/subcategory/laptop.jpg"
+        },
+        {
+            "id": 5,
+            "catid":3,
+            "name": "Makeup",
+            "image": "image/subcategory/makeup.jpg"
+        },
+        {
+            "id": 6,
+            "catid":3,
+            "name": "Body Moisturizers",
+            "image": "image/subcategory/bodymos.jpg"
+        },
+        {
+            "id": 7,
+            "catid":4,
+            "name": "Fiction",
+            "image": "image/subcategory/fiction.jpg"
+        },
+        {
+            "id": 8,
+            "catid":4,
+            "name": "Nonfiction",
+            "image": "image/subcategory/nonfiction.jpg"
+         },
+        {
+            "id": 9,
+            "catid":5,
+            "name": "Beverages",
+            "image": "image/subcategory/bevarage.jpg"
+        },
+        {
+            "id": 10,
+            "catid":5,
+            "name": "Snacks",
+            "image": "image/subcategory/snaks.jpg"
+        }
+    ]
+}
